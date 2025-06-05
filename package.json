@@ -1,0 +1,17 @@
+{
+  "name": "cdp-recruitment-javascript-master",
+  "version": "1.0.0",
+  "description": "Technical test",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "vitest",
+    "test:coverage": "vitest run --coverage"
+  },
+  "author": "Valerian Crasnier",
+  "license": "ISC",
+  "dependencies": {
+    "@vitest/coverage-v8": "^3.2.1",
+    "vitest": "^3.2.1"
+  }
+}
