@@ -1,5 +1,5 @@
 import { describe, it, expect, vi } from 'vitest'
-import { data } from '~mocks/data.js'
+import { data as mockedData } from '~mocks/data.js'
 import { exit, argv } from 'node:process'
 
 vi.mock('node:process', () => vi.mockObject({
@@ -8,7 +8,7 @@ vi.mock('node:process', () => vi.mockObject({
 }))
 
 vi.mock('~/data.js', () => ({
-  data
+  data: mockedData
 }))
 
 describe('index', () => {
